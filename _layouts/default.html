@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <!-- Bootswatch : thème sombre par défaut -->
+    <link id="theme-bootstrap" rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/darkly/bootstrap.min.css">
+
+    <!-- Ton CSS custom -->
+    <link rel="stylesheet" href="/assets/css/theme.css">
+
+    <!-- Script toggle (chargé tôt pour éviter flash blanc) -->
+    <script src="/assets/js/theme-toggle.js"></script>
+</head>
+
+<body class="bg-body text-body">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+    <a class="navbar-brand" href="/">{{ site.title }}</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+        </ul>
+
+        <!-- Bouton mode clair / sombre -->
+        <button id="theme-toggle" class="btn btn-outline-light">🌙/☀️</button>
+    </div>
+</nav>
+
+<main class="container mt-4 mb-5">
+    {{ content }}
+</main>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* Variables globales */
+:root {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+}
+
+/* Mode clair */
+html.light {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+}
+
+/* Application */
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Liens */
+a {
+    color: #4da3ff;
+}
+html.light a {
+    color: #0066cc;
+}
+
+/* Correction Bootstrap pour basculer le texte */
+.bg-body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}

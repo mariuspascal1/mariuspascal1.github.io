@@ -1,0 +1,18 @@
+title: "Marius Pascal"
+description: "Portfolio, CV et blog sur la data dans le sport"
+remote_theme: null
+markdown: kramdown
+
+# Pour que Jekyll génère un blog
+collections:
+  posts:
+    output: true
+
+# Navigation (si tu veux l'utiliser dans ta navbar plus tard)
+nav:
+  - name: "Accueil"
+    link: "/"
+  - name: "CV"
+    link: "/cv"
+  - name: "Blog"
+    link: "/blog"
